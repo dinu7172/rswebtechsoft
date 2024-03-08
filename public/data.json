@@ -1,0 +1,85 @@
+{
+    "categories":["Desktop", "Mobile"],
+    "tech":["C#",".NET","SQLServer"],
+    "products":[
+        {
+            "id":1,
+            "title":"Data Acquisation Software",
+            "category":["Desktop"],
+            "tech":[".NET","SQLServer"],
+            "image": ["https://source.unsplash.com/300x300?data"],
+            "desc": "This is my projects that help lots people to acquirethe data from variety of IOT base softwares so that they capture and use their the data make insightful descisions",
+            "clients":["Sun Pharma", "Cipla", "Dr.Reddy's", "Swati Spentose", "SR Lab", "Labcare Equipment and Services", "Suven Life Science", "Elem Technology", "Balaji Hospital", "USV Ltd", "Supreme Pharma"],
+            "slug":"data-acquisation-software",
+            "features":["This software is running in all window platforms starting from Windows-XP Service pack 2 onwards."
+            ,"It can configure unlimited number of logger."
+            ,"It can configure unlimited number of Scanner."
+            ,"It follows 21 CFR rules."]
+        },
+        {
+            "id":2,
+            "title":"Builder Management Software",
+            "category":["Desktop"],
+            "tech":[".NET","SQLServer", "C#"],
+            "image": ["https://source.unsplash.com/300x300?software"],
+            "desc": "This is my projects that help lots people to acquirethe data from variety of IOT base softwares so that they capture and use their the data make insightful descisions",
+            "detialDesc": "This is my projects that help lots people to acquirethe data from variety of IOT base softwares so that they capture and use their the data make insightful descisions",
+            "clients":["Swati Developer","Yadav Construction"],
+            "slug":"builder-management-software"
+        }, 
+        {
+            "id":3,
+            "title":"Billing Management Software with GST",
+            "category":["Desktop"],
+            "tech":[".NET","SQLServer"],
+            "image": ["https://source.unsplash.com/300x300?billing"],
+            "desc":"This is software helps in creating the automating billing and GST.",
+            "detialDesc": "We are built to work directly with all our clients and enjoy a genuine collabration with them. User can have there user name, password for login.Welcome Screen Of Software.Master Section Contain all Category, Items, Supplier, Customers, Borrowed, Company Master, Bank Details.Transaction Section Contain all purchas invoice, Money Payment Form, Money Recives Form, Etc."
+,           "clients":["Suvidha Roadways","MM Motilal Masala","Ganesh Enterprises","Bright Packaging"],
+            "slug":"billing-management-software",
+            "features":["Simple ,secure and easy to operate with anyone.","Best bill generator with all billing ability with GST.","Regular backup of your data and secure it."]
+
+        }, 
+        {
+            "id":4,
+            "title":"Jewellery Management Software",
+            "category":["Desktop"],
+            "tech":[".NET","SQLServer"],
+            "image": ["https://source.unsplash.com/300x300?jewellery"],
+            "desc": "This is my projects that help lots people to acquirethe data from variety of IOT base softwares so that they capture and use their the data make insightful descisions"
+,           "clients":[],
+            "slug":"jewellery-management-software",
+            "features":["Look professional with beautiful line sheets, price lists, invoices and memos with your logo.","Get organized especially at tax time",
+            "Save time, sell more jewelry and be profitable!","Keep track of inventory, sales and sales tax collected.","Different Login facility for different types of users."]
+
+        }, 
+        {
+            "id":5,
+            "title":"Retail Management System",
+            "category":["Desktop"],
+            "tech":[".NET","SQLServer", "C#"],
+            "image": ["https://source.unsplash.com/300x300?retail"],
+            "desc": "This is my projects that help lots people to acquirethe data from variety of IOT base softwares so that they capture and use their the data make insightful descisions"
+        ,   "clients":["Swati Developer","Yadav Construction"],
+            "slug":"retial-management-system"
+        },
+        {
+            "id":6,
+            "title":"Payroll and Attendance Management System",
+            "category":["Desktop"],
+            "tech":[".NET","SQLServer", "C#"],
+            "image": ["https://source.unsplash.com/300x300?payroll"],
+            "desc": "This is my projects that help lots people to acquirethe data from variety of IOT base softwares so that they capture and use their the data make insightful descisions",
+            "clients":["Vikrant Infotech", "C.S Pochee & Sons", "Capture Networks"],
+            "slug":"payroll-and-attendance-management-system",
+            "features": [""]
+        }
+    ],
+    "services":[
+        {
+            "name":"Software Development",
+            "products":[]
+        }
+        
+    ]
+}
