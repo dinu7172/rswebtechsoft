@@ -1,4 +1,4 @@
-import Fade from 'react-reveal/Fade';
+
 import teamPic from "@/public/assets/Business_SVG.svg"
 
 const About = () => {
