@@ -7,7 +7,7 @@ const HeroBanner = () => {
                 <div className="container flex flex-col justify-center p-6 mx-auto sm:py-5 md:py-2 lg:pb-20 lg:pt-5 lg:flex-row lg:justify-between">
                     <div className="flex flex-col justify-center p-6 text-center rounded-sm lg:max-w-md xl:max-w-lg lg:text-left">
                         <p className="p-2 text-3xl font-bold text-violet-500">At</p>
-                        <h1 className="text-5xl font-bold leadi sm:text-6xl foot-logo">RSWeb
+                        <h1 className="text-3xl font-bold leadi sm:text-6xl foot-logo">RSWeb
                             <span className="text-violet-500 foot-logo">TechSoft</span>
                         </h1>
                       <div className="center mt-6 mb-8 text-lg sm:mb-12">

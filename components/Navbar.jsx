@@ -57,7 +57,7 @@ export default function Navbar({ contactRef}) {
                     <a href="/" className="-m-1.5 p-1.5 flex justify-center">
                         <span className="sr-only">Your Company</span>
                         <img className="h-8 w-auto"  src="assets/logo.png" alt="" />
-                        <p className='mt-2 mx-1 foot-logo font-bold'>RSWeb<span className='text-violet-500'>TechSoft</span></p>
+                        <p className='mt-2 mx-1 foot-logo font'>RSWeb<span className='text-violet-500'>TechSoft</span></p>
                     </a>
                 </div>
                 <div className="flex lg:hidden">

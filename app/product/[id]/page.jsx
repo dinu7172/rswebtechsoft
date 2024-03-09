@@ -46,13 +46,13 @@ function ProductDetails({ params }) {
                     <p>{product.category.join(', ')}</p>
                   </div>
                 </div>
-                <div className="grid grid-cols-2 gap-4 mb-4">
+                <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mb-4">
                   <div>
                     <p className="font-semibold">Clients Used:</p>
                     <ul className="list-disc ml-4">
-                      {product.clients.map((client, index) => (
+                      {product.clients ? (product.clients.map((client, index) => (
                         <li key={index}>{client}</li>
-                      ))}
+                      ))):(<li>Product not found</li>)}
                     </ul>
                   </div>
                   <div>

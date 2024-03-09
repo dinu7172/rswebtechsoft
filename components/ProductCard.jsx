@@ -45,6 +45,14 @@ const ProductCard = () => {
         });
     };
 
+    const truncateDescription = (description) => {
+        const words = description.split(' ');
+        if (words.length > 20) {
+            return `${words.slice(0, 20).join(' ')} ...`;
+        }
+        return description;
+    };
+
     let text = "";
     
     const handleFilter = (item) => {
@@ -63,9 +71,9 @@ const ProductCard = () => {
     }
 
     return (
-        <section id="projects" className="bg-white dark:bg-gray-900 py-10 px-12 max-w-[1320px] mx-auto">
+        <section id="projects" className="bg-white dark:bg-gray-900 py-10 px-0 max-w-[1420px] mx-auto">
             <h1 className="text-2xl sm:text-4xl font-bold text-center mb-6">Projects</h1>
-            <div id="tags">
+            <div id="tags" className="flex flex-wrap">
                 <p className="inline-block bg-gray-300 p-2 mx-2 my-1 rounded-xl hover:bg-gray-400 hover:text-white duration-300">
                     All
                 </p>
@@ -80,7 +88,7 @@ const ProductCard = () => {
                 })}
 
             </div>
-            <div className="grid grid-flow-row gap-8 text-neutral-600 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
+            <div className="grid grid-cols-1 gap-4 overflow-hidden mx-4 sm:grid-cols-2 md:grid-cols-3">
                 {products.map((item) => {
                     return (
                         <div key={item.id} className="my-8 rounded shadow-lg shadow-gray-200 dark:shadow-gray-900 duration-300 relative">
@@ -104,8 +112,10 @@ const ProductCard = () => {
                                     </div>
                                     <div className="">
                                         <p className="overflow-hidden h-15">
-                                            <span className="font-bold">Desc:</span> {item.desc}
-                                        </p>
+                                        <span className="font-bold">Desc:</span> {truncateDescription(item.desc)}
+                                            {item.desc.split(' ').length > 20 && (
+                                                <a href="#" className="text-blue-500">More</a>
+                                            )}                                        </p>
                                     </div>
                                 </div>
                                 <div id="social-links" className="border-t flex items-center justify-between py-2">

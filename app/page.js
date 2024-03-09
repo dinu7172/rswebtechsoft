@@ -15,7 +15,6 @@ import Contact from "@/components/Contact";
 
 
 export default function Home() {
-  const contactRef = useRef(null);
 
   return (
 
@@ -25,7 +24,7 @@ export default function Home() {
         <meta name="description" content="Your website description" /> {/* Add other metadata */}
         {/* Add more metadata tags as needed */}
       </Head>
-        <Navbar contactRef={contactRef}/>
+        <Navbar/>
 
       <section id="hero-banner">
         <HeroBanner />
