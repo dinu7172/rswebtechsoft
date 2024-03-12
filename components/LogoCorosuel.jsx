@@ -2,9 +2,7 @@ import React from 'react';
 import Image from 'next/image';
 
 // Import your images from the public directory
-import cipla from '@/public/assets/cipla.png';
-import Sun_pharma from '@/public/assets/Sun_pharma.png';
-import suven from '@/public/assets/suven.jpg';
+
 
 const LogoCarousel = () => {
   return (
