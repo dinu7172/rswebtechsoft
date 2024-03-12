@@ -14,7 +14,8 @@
             "features":["This software is running in all window platforms starting from Windows-XP Service pack 2 onwards."
             ,"It can configure unlimited number of logger."
             ,"It can configure unlimited number of Scanner."
-            ,"It follows 21 CFR rules."]
+            ,"It follows 21 CFR rules."],
+            "videoUrl":"https://www.youtube.com/embed/tS7upsfuxmo?si=hdIb1bWQS6WQ3D0w"
         },
         {
             "id":2,
@@ -22,10 +23,22 @@
             "category":["Desktop"],
             "tech":[".NET","SQLServer", "C#"],
             "image": ["https://source.unsplash.com/300x300?software"],
-            "desc": "This is my projects that help lots people to acquirethe data from variety of IOT base softwares so that they capture and use their the data make insightful descisions",
+            "desc": "The Builder Management System automatically monitors every aspect of your home building operation, its also help us to make allowing builders and developers to make critical decisions quickly and pro-actively, before they cost money.",
             "detialDesc": "This is my projects that help lots people to acquirethe data from variety of IOT base softwares so that they capture and use their the data make insightful descisions",
             "clients":["Swati Developer","Yadav Construction"],
-            "slug":"builder-management-software"
+            "slug":"builder-management-software",
+            "features":["Various Project wise record maintenance with all type of flats.",
+            "Flat details, Flat enquiry, Booking form.",
+            "Flat payment record and alert for pending payment.",
+            "Entry for Vendor and their item list maintenance.",
+            "Purchase order generation and vendor payment detail.","Daily used Item details and purchase return details.",
+            "Cash vouchers and other expenses record maintenance for Project, Office, Personal Uses.",
+            "Payment details for existing valuation.",
+            "Employee details for records.",
+            "Extract reports Financial year wise &amp; Date wise",
+            "Reports to all features giving you correct status."
+            ],
+            "videoUrl":"https://www.youtube.com/embed/tS7upsfuxmo?si=hdIb1bWQS6WQ3D0w"
         }, 
         {
             "id":3,
@@ -38,7 +51,8 @@
 ,           "clients":["Suvidha Roadways","MM Motilal Masala","Ganesh Enterprises","Bright Packaging"],
             "slug":"billing-management-software",
             "features":["Simple ,secure and easy to operate with anyone.","Best bill generator with all billing ability with GST.","Regular backup of your data and secure it."]
-
+            ,
+            "videoUrl":"https://www.youtube.com/embed/tS7upsfuxmo?si=hdIb1bWQS6WQ3D0w"
         }, 
         {
             "id":4,
@@ -51,7 +65,8 @@
             "slug":"jewellery-management-software",
             "features":["Look professional with beautiful line sheets, price lists, invoices and memos with your logo.","Get organized especially at tax time",
             "Save time, sell more jewelry and be profitable!","Keep track of inventory, sales and sales tax collected.","Different Login facility for different types of users."]
-
+            ,
+            "videoUrl":"https://www.youtube.com/embed/tS7upsfuxmo?si=hdIb1bWQS6WQ3D0w"
         }, 
         {
             "id":5,
@@ -59,10 +74,17 @@
             "category":["Desktop"],
             "tech":[".NET","SQLServer", "C#"],
             "image": ["https://source.unsplash.com/300x300?retail"],
-            "desc": "This is my projects that help lots people to acquirethe data from variety of IOT base softwares so that they capture and use their the data make insightful descisions"
+            "desc": "A retail management system (RMS) is a platform that combines several useful tools to aid in running a retail store or chain, such as inventory management, point of sale (POS), and customer relationship management (CRM)"
         ,   "clients":["Swati Developer","Yadav Construction"],
-            "slug":"retial-management-system"
-        },
+            "slug":"retial-management-system",
+            "features":[
+                "Some platforms are even compatible with mobile devices, so these tasks can be done anywhere in the store.",
+                "By only buying one platform for your business, rather than several, you can ensure that all the systems will share information and work well together.",
+                "Some platforms will even have marketing and analytics tools to help you improve your business.","Retail management systems can help store owners by providing multiple services in one place, streamlining the process of running a store.",
+                "Everyday tasks such as managing and buying inventory, checking out customers, scheduling employee shifts, and keeping track of finances are easily completed using one solution"]
+                ,
+                "videoUrl":"https://www.youtube.com/embed/tS7upsfuxmo?si=hdIb1bWQS6WQ3D0w"
+            },
         {
             "id":6,
             "title":"Payroll and Attendance Management System",
@@ -72,13 +94,43 @@
             "desc": "This is my projects that help lots people to acquirethe data from variety of IOT base softwares so that they capture and use their the data make insightful descisions",
             "clients":["Vikrant Infotech", "C.S Pochee & Sons", "Capture Networks"],
             "slug":"payroll-and-attendance-management-system",
-            "features": [""]
+            "features": ["SVV School"],
+            "videoUrl":"https://www.youtube.com/embed/tS7upsfuxmo?si=hdIb1bWQS6WQ3D0w"
+        },
+        {
+            "id":7,
+            "title":"Salon Management System",
+            "category":["Desktop"],
+            "tech":[".NET","SQLServer", "C#"],
+            "image": ["https://source.unsplash.com/300x300?salon"],
+            "desc": "A system for managing a hair salon. This system keeps track of employee salaries, inventory and customer data along with billing. This is a fully equipped system that alone manages the entire functioning of a hair salon. It maintains stock of inventory coming in. It also manages individual employee salary. The system is even equipped to manage customer billing and data storage.",
+            "clients":["Sarina Beauty Parlour.", "Blunt Edge Saloon."],
+            "slug":"salon-management-system",
+            "features": ["Maintain Single Salon or Multi Salon outlet",
+            "Maintain Customer Database",
+            "Maintain Service List along with Rates",
+            "Maintain Employee Details along with incentive structure",
+            "Generate Sales Report",
+            "Generate Employee wise Salary and Incentive report",
+            "Maintain Inventory of Raw Maretials and Consumables Centrally manged server and dat for Multi Salon Owners", 
+            "Send reminders to Customers at particular intervals and ongoing offers / promotions"],
+            "videoUrl":"https://www.youtube.com/embed/tS7upsfuxmo?si=hdIb1bWQS6WQ3D0w"
         }
     ],
     "services":[
         {
-            "name":"Software Development",
-            "products":[]
+            "id":1,
+            "name": "Software Development",
+            "desc":"RSWEBTECHSOFT maintains an extensive development center with a broad selection of hardware, software and operating systems. This allows us to develop and test our applications across a full range of target platforms. Our development center is equipped with state-of-art infrastructure.",
+            "detailDesc":"",
+            "image":[]
+
+        },
+        {
+            "id":2,
+            "name": "Web Development",
+            "desc":"Web development can range from developing a simple single static page of plain text to complex web-based internet applications, electronic businesses, and social network services.Web development is the work involved in developing a web site for the Internet or an intranet.",
+            "detailDesc":""
         }
         
     ]

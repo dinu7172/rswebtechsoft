@@ -21,14 +21,20 @@ function ProductDetails({ params }) {
       <Navbar />
       {product ? (
 
-        <div>
-          <div className="container mx-auto p-4">
+        <div className='bg-gray-100'>
+          <div className="container mx-auto p-8">
             <div className="bg-white shadow-md rounded-lg overflow-hidden">
-              <img
-                src={product.image[0]}
-                alt={product.title}
-                className="w-full p-3 rounded h-64 object-cover object-center"
-              />
+              {/* Product Length images corosuel */}
+
+              {product.image.length > 1 ? (
+                <Carousel images={product.image} />
+              ) : (
+                <img
+                  src={product.image[0]}
+                  alt={product.title}
+                  className="w-[80%] p-3 flex mx-auto rounded h-64 object-cover object-center"
+                />
+              )}
               <div className="p-4">
                 <h2 className="text-2xl font-bold mb-2">{product.title}</h2>
                 <p className="text-sm text-gray-600 mb-4">{product.desc}</p>
@@ -52,7 +58,7 @@ function ProductDetails({ params }) {
                     <ul className="list-disc ml-4">
                       {product.clients ? (product.clients.map((client, index) => (
                         <li key={index}>{client}</li>
-                      ))):(<li>Product not found</li>)}
+                      ))) : (<li>Product not found</li>)}
                     </ul>
                   </div>
                   <div>
@@ -65,11 +71,25 @@ function ProductDetails({ params }) {
                   </div>
 
                 </div>
-
+                { product.videoUrl ?(
+            <div className="mt-8">
+            <h2 className="text-2xl font-bold mb-4">Product Video</h2>
+            <div className="relative flex justify-center" style={{ paddingBottom: '56.25%', height: 0, overflow: 'hidden' }}>
+              <iframe
+                src={product.videoUrl}
+                
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowFullScreen="false"
+                className="absolute top-0 left-0 w-[80%] h-[80%] text-center mx-auto"
+              ></iframe>
+            </div>
+          </div>
+          ):(<></>)}
 
               </div>
             </div>
           </div>
+     
         </div>
       ) : (
         <p>Product not found</p>

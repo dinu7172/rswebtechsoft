@@ -1,40 +1,18 @@
-import { useState, useEffect } from "react";
-import Logo from "@/public/assets/Alkem_logo.png"
-import { useRouter } from "next/navigation";
+"use client"
+import { useEffect, useState} from 'react'
 import productsData from "@/public/data.json";
 
-const ProductCard = () => {
+
+
+const page = () => {
     const [products, setProducts] = useState([]);
     const [categories, setCategories] = useState([]);
     const [techs, setTechs] = useState([]);
-    const [active, setActive] = useState('');
-    const router = useRouter();
 
-    const [product, setProduct] = useState(null);
-  
     useEffect(() => {
-        const fetchData = async () => {
-            try {
-                const response = await fetch('/data.json');
-                const data = await response.json();
-                setCategories(data.categories)
-                setProducts(data.products);
-                setTechs(data.tech)
-
-            } catch (error) {
-                console.error('Error fetching data:', error);
-            }
-        };
-
-        fetchData();
-    }, []);
-
-    const cat = categories.map((item,index) => {
-        return (
-            <p key={index} className="inline-block bg-gray-300 p-2 mx-2 my-1 rounded-xl hover:bg-gray-400 hover:text-white duration-300">
-                {item}
-            </p>
-        )
+        setProducts(productsData.products);
+    setCategories(productsData.categories);
+    setTechs(productsData.tech);
     })
 
     const techStack = (item) => {
@@ -44,40 +22,23 @@ const ProductCard = () => {
             );
         });
     };
+    const category = categories.map((item, index) => {
+        return (
+            <button key={index} onClick={() => { handleFilter(item) }}
+                className="inline-block bg-gray-300 p-2 mx-2 my-1 rounded-xl hover:bg-gray-400 hover:text-white duration-300">
+                {item}
+            </button>
+        )
+    })
 
-    const truncateDescription = (description) => {
-        const words = description.split(' ');
-        if (words.length > 20) {
-            return `${words.slice(0, 20).join(' ')} ...`;
-        }
-        return description;
-    };
-
-    let text = "";
-    
-    const handleFilter = (item) => {
-        if (active === item) {
-            setActive('');
-            text =``;
-            router.push("")
-        } else {
-            setActive(item);
-            text =`?tech=${item}`;
-        }
-
-        console.log(text)
-        router.push(text, { scroll: false })
-
-    }
-
-    return (
-        <section id="projects" className=" bg-gray-100 dark:bg-gray-900 py-10 px-0 max-w-[1420px] mx-auto">
+  return (
+    <section id="projects" className=" bg-gray-100 dark:bg-gray-900 py-10 px-0 max-w-[1420px] mx-auto">
             <h1 className="text-2xl sm:text-4xl font-bold text-center mb-6">Projects</h1>
             <div id="tags" className="flex flex-wrap">
                 <p className="inline-block bg-gray-300 p-2 mx-2 my-1 rounded-xl hover:bg-gray-400 hover:text-white duration-300">
                     All
                 </p>
-                {cat}
+                {category}
                 {techs.map((item, index) => {
                     return (
                         <button key={index} onClick={() => { handleFilter(item) }}
@@ -89,7 +50,7 @@ const ProductCard = () => {
 
             </div>
             <div className="grid grid-cols-1 gap-4 overflow-hidden mx-4 sm:grid-cols-2 md:grid-cols-3">
-                {products.slice(0,6).map((item) => {
+                {products.map((item) => {
                     return (
                         <div key={item.id} className="my-8 rounded shadow-lg shadow-gray-200 dark:shadow-gray-900 duration-300 relative">
                             <div className="absolute h-full w-full rounded-2xl bg-gray-400 rotate-6 z-0"></div>
@@ -112,10 +73,8 @@ const ProductCard = () => {
                                     </div>
                                     <div className="">
                                         <p className="overflow-hidden h-15">
-                                        <span className="font-bold">Desc:</span> {truncateDescription(item.desc)}
-                                            {item.desc.split(' ').length > 20 && (
-                                                <a href="#" className="text-blue-500">More</a>
-                                            )}                                        </p>
+                                        <span className="font-bold">Desc:</span> {item.desc}
+                                        </p>
                                     </div>
                                 </div>
                                 <div id="social-links" className="border-t flex items-center justify-between py-2">
@@ -129,7 +88,7 @@ const ProductCard = () => {
                 
             </div>
         </section>
-    )
+  )
 }
 
-export default ProductCard;
+export default page
