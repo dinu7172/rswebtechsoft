@@ -90,7 +90,7 @@
             "title":"Payroll and Attendance Management System",
             "category":["Desktop"],
             "tech":[".NET","SQLServer", "C#"],
-            "image": ["https://source.unsplash.com/300x300?payroll"],
+            "image": ["https://source.unsplash.com/300x300?payroll", "https://source.unsplash.com/300x300?payroll"],
             "desc": "This is my projects that help lots people to acquirethe data from variety of IOT base softwares so that they capture and use their the data make insightful descisions",
             "clients":["Vikrant Infotech", "C.S Pochee & Sons", "Capture Networks"],
             "slug":"payroll-and-attendance-management-system",

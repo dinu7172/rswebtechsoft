@@ -1,7 +1,5 @@
 import React from 'react';
-import LogoSlider from './LogoSlider';
 import LogoCarousel from './LogoCorosuel';
-import logo from "@/public/assets/cipla.png"
 import FancyTestimonialsSlider from './FancyTestimonialsSlider';
 
 const OurClients = () => {

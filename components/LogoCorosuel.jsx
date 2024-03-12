@@ -1,8 +1,6 @@
 import React from 'react';
 import Image from 'next/image';
-
 // Import your images from the public directory
-
 
 const LogoCarousel = () => {
   return (
