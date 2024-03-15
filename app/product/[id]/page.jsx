@@ -4,6 +4,7 @@ import React, { useState, useEffect } from 'react';
 import productsData from '@/public/data.json'; // Adjust the path to your data.json file
 import Navbar from '@/components/Navbar';
 import Footer from '@/components/Footer';
+import Carousel from '@/components/Corosuel';
 
 function ProductDetails({ params }) {
   const [product, setProduct] = useState(null);
@@ -16,6 +17,7 @@ function ProductDetails({ params }) {
     setProduct(foundProduct);
   }, [params]);
 
+
   return (
     <div>
       <Navbar />
@@ -25,16 +27,15 @@ function ProductDetails({ params }) {
           <div className="container mx-auto p-8">
             <div className="bg-white shadow-md rounded-lg overflow-hidden">
               {/* Product Length images corosuel */}
-
-              {product.image.length > 1 ? (
+              {/* {product.image.length > 1 ? (
                 <Carousel images={product.image} />
-              ) : (
+              ) : ( */}
                 <img
                   src={product.image[0]}
                   alt={product.title}
                   className="w-[80%] p-3 flex mx-auto rounded h-64 object-cover object-center"
                 />
-              )}
+              {/* )} */}
               <div className="p-4">
                 <h2 className="text-2xl font-bold mb-2">{product.title}</h2>
                 <p className="text-sm text-gray-600 mb-4">{product.desc}</p>
